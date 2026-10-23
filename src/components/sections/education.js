@@ -10,6 +10,10 @@ import { usePrefersReducedMotion } from '@hooks';
 const StyledJobsSection = styled.section`
   max-width: 900px;
 
+  @media (max-width: 600px) {
+    --tab-width: 170px;
+  }
+
   .inner {
     display: flex;
 
@@ -91,6 +95,12 @@ const StyledTabButton = styled.button`
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
     text-align: center;
+    width: var(--tab-width);
+    min-width: var(--tab-width);
+    height: 52px;
+    white-space: normal;
+    line-height: 1.3;
+    font-size: var(--fz-xxs);
   }
 
   &:hover,
@@ -240,7 +250,7 @@ const Education = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs2" ref={revealContainer}>
+    <StyledJobsSection id="education" ref={revealContainer}>
       <h2 className="numbered-heading">Education</h2>
 
       <div className="inner">

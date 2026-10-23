@@ -1,11 +1,11 @@
 ---
-date: '2022-06-01'
+date: '2021-10-03'
 pi: 'Prof. Satyen Saha'
 title: 'Research Intern'
 company: 'Banaras Hindu University'
 location: 'Varanasi, India'
-range: 'Oct 2021 - June 2022'
-url: 'www.satyensaha.com'
+range: 'Oct 2021 - May 2022'
+url: 'https://www.bhu.ac.in/'
 ---
 
-- UV-Visible Spectroscopic Analysis based determination of Isosbestic point of Bromocresol Green.
+- UV-Visible spectroscopic analysis based determination of the isosbestic point of Bromocresol Green.

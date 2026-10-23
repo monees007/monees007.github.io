@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { navLinks } from '@config';
 import { KEY_CODES } from '@utils';
 import { useOnClickOutside } from '@hooks';
+import ThemeToggle from './themeToggle';
 
 const StyledMenu = styled.div`
   display: none;
@@ -269,6 +270,9 @@ const Menu = () => {
             <a href="/resume.pdf" className="resume-link">
               Resume
             </a>
+            <div style={{ marginTop: '30px' }}>
+              <ThemeToggle />
+            </div>
           </nav>
         </StyledSidebar>
       </div>

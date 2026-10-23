@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'manish.sia.mc@gmail.com',
+  email: 'manish.chandra.xy@gmail.com',
 
   socialMedia: [
     {
@@ -26,12 +26,20 @@ module.exports = {
       url: '/#about',
     },
     {
-      name: 'Research Experience',
+      name: 'Experience',
       url: '/#jobs',
     },
     {
       name: 'Education',
-      url: '/#jobs2',
+      url: '/#education',
+    },
+    {
+      name: 'Research',
+      url: '/#research',
+    },
+    {
+      name: 'Publications',
+      url: '/#publications',
     },
     {
       name: 'Projects',
@@ -44,9 +52,9 @@ module.exports = {
   ],
 
   colors: {
-    green: '#64ffda',
-    navy: '#0a192f',
-    darkNavy: '#020c1b',
+    green: '#0b7a6a',
+    navy: '#f8fafc',
+    darkNavy: '#e8edf3',
   },
 
   srConfig: (delay = 200, viewFactor = 0.25) => ({

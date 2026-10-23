@@ -1,12 +1,13 @@
 ---
 date: '2025-07-01'
 pi: 'Dr. Supriya Sabbani'
-title: "Master's Researcher"
+title: "Master's Research Scholar"
 company: 'Jawaharlal Nehru University'
-location: 'New Delih, India'
-range: 'July 2025 - June 2025'
+location: 'New Delhi, India'
+range: 'Jul 2025 - May 2026'
 url: 'https://www.jnu.ac.in/'
 ---
 
-- Quantitatively correlating solvent induced reversible color change in Co(ina) metal organic frameworks (MOF) with gate-opening mechanism supported by DFT data.
-- Study of Solvent-induced Redox Reactions in Copper Coordination Polymer: Catalysis Property, and Electrochemical H2 Evolution.
+- Master's Thesis: _Solvent-Modulated Structural Transformations in Cobalt and Copper Coordination Polymers: From Solvatochromic Switching to Hydrogen Evolution Catalysis_.
+- Combined experimental characterisation (DRS, FTIR, TGA) with periodic DFT+U calculations to study the reversible, solvent-induced colour change in [Co(INA)₂] MOFs.
+- Studied solvent-induced redox transformations in copper coordination polymers and evaluated them for electrocatalytic hydrogen evolution.

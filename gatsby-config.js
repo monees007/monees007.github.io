@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
     title: 'Manish Chandra',
     description:
-      'Manish Chandra is a researcher and developer passionate about machine learning, drug discovery, and building innovative digital solutions.',
-    siteUrl: 'https://manish.dev', // No trailing slash allowed!
+      'Manish Chandra is a chemistry researcher working on DFT-based electronic structure analysis of metal-organic frameworks and coordination polymers.',
+    siteUrl: 'https://monees007.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@monees007',
   },
@@ -147,12 +147,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-45666519-2',
       },
     },
   ],

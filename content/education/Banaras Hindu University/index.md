@@ -1,10 +1,11 @@
 ---
-title: "Bachelor's of Science in Chemistry"
+title: 'B.Sc. (Hons.) Chemistry'
 institution: 'Banaras Hindu University'
 location: 'Varanasi, India'
-range: '2019 - 2022'
-date: '2022-07-08'
+range: 'Jul 2019 - Aug 2022'
+date: '2019-07-08'
 url: 'https://www.bhu.ac.in'
 ---
 
-- Rigorous honours chemistry curriculum covering core theory (organic, inorganic, physical, analytical), accompanied with biology courses, including genetics, biochemistry, cell biology, etc, with their accompanied laboratory courses.
+- Rigorous honours chemistry curriculum covering core theory (organic, inorganic, physical, analytical).
+- Accompanying biology courses including genetics, biochemistry and cell biology, with their laboratory courses.

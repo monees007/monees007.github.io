@@ -100,7 +100,7 @@ const StyledPic = styled.div`
     &:before {
       top: 0;
       left: 0;
-      background-color: var(--navy);
+      background-color: var(--pic-overlay);
       mix-blend-mode: screen;
     }
 
@@ -127,22 +127,22 @@ const About = () => {
 
   const skills = [
     'DFT',
-    'QM/MM',
-    'Quantum Espresso',
-    'TD-DFT',
-    'CP2K',
-
+    'Quantum ESPRESSO',
+    'ORCA',
+    'Molecular Dynamics',
+    'Machine Learning',
     'Python',
-    'Java',
-    'Kotlin',
-    'JavaScript',
-    'Dart',
-    'Linux',
+    'PyTorch',
+    'Scikit-learn',
+    'Pandas / NumPy',
+    'Matplotlib',
+    'Linux / Bash',
     'Git',
-    'Bash',
-    'HPC',
-    'MPI',
+    'SQL',
+    'LaTeX',
   ];
+
+  const labSkills = ['FTIR', 'UV-Vis / DRS', 'TGA / DSC', 'X-Ray Spectroscopy', 'MOF synthesis'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -152,32 +152,37 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Manish Chandra, a chemistry researcher passionate about computational
-              materials science and molecular dynamics. I specialize in theoretical and
-              computational chemistry, leveraging advanced computational tools to understand and
-              predict the behavior of complex molecular systems.
+              Hello! I'm Manish Chandra, a chemist working at the interface of experiment and
+              computation. I completed my M.Sc. in Chemistry at Jawaharlal Nehru University, New
+              Delhi, after a B.Sc. (Hons.) in Chemistry at Banaras Hindu University and a Diploma in
+              Programming from IIT Madras.
             </p>
 
             <p>
-              My research focuses on material characterization through both experimental and
-              computational methods. I've worked extensively with density functional theory (DFT),
-              quantum mechanics/molecular mechanics (QM/MM) simulations, and high-performance
-              computing environments. Currently, I'm exploring the fascinating world of
-              metal-organic frameworks and their applications in materials science.
+              My Master's research with Dr. Supriya Sabbani focused on solvent-modulated structural
+              transformations in cobalt and copper coordination polymers, from solvatochromic
+              switching to hydrogen evolution catalysis, combining spectroscopic and thermal
+              characterisation with periodic DFT+U calculations.
             </p>
 
             <p>
-              Beyond research, I'm also interested in developing software solutions that bridge
-              chemistry and technology. I combine my strong computational chemistry background with
-              programming expertise to create innovative tools for scientific research and
-              discovery.
+              I enjoy building software that helps with scientific work, and I'm interested in
+              applying machine learning alongside quantum-chemical methods to problems in surface
+              chemistry and catalysis.
             </p>
 
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>Computational and programming tools I work with:</p>
           </div>
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+          </ul>
+
+          <p style={{ marginTop: '20px' }}>Laboratory techniques:</p>
+          <ul className="skills-list">
+            {labSkills.map((skill, i) => (
+              <li key={i}>{skill}</li>
+            ))}
           </ul>
         </StyledText>
 

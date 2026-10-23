@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
-import { Menu } from '@components';
+import { Menu, ThemeToggle } from '@components';
 import { IconLogo, IconHex } from '@components/icons';
 
 const StyledHeader = styled.header`
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: var(--nav-bg);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -199,6 +199,7 @@ const Nav = ({ isHome }) => {
                   ))}
               </ol>
               <div>{ResumeLink}</div>
+              <ThemeToggle />
             </StyledLinks>
 
             <Menu />
@@ -237,6 +238,7 @@ const Nav = ({ isHome }) => {
                   </CSSTransition>
                 )}
               </TransitionGroup>
+              <ThemeToggle />
             </StyledLinks>
 
             <TransitionGroup component={null}>

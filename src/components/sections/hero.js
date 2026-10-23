@@ -61,13 +61,13 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Manish Chandra.</h2>;
-  const three = <h3 className="big-heading">I do research on Material Science.</h3>;
+  const three = <h3 className="big-heading">I study materials with computational chemistry.</h3>;
   const four = (
     <>
       <p>
-        Chemistry researcher with hands-on experience in DFT-based electronic structure analysis,
-        QM/MM simulations, and metal-organic framework characterization, supported by a strong
-        computational and programming background.
+        Chemistry researcher (M.Sc., Jawaharlal Nehru University) working with DFT-based electronic
+        structure analysis and the characterisation of metal-organic frameworks and coordination
+        polymers, supported by a strong programming and data-science background.
       </p>
     </>
   );

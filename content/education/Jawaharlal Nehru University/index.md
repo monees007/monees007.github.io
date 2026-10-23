@@ -1,11 +1,12 @@
 ---
-title: 'Master of Science in Chemistry'
+title: 'M.Sc. Chemistry'
 institution: 'Jawaharlal Nehru University'
 location: 'New Delhi, India'
-range: '2024 - 2026'
-date: '2026-07-15'
+range: 'Aug 2024 - May 2026'
+date: '2024-08-22'
 url: 'https://www.jnu.ac.in'
 ---
 
-- Spectroscopic Analysis, Inorganic Synthesis, Computational Chemistry
-- Crystallography, Quantum Chemistry
+- Supramolecular Chemistry, Bioinorganic Chemistry and Drug Discovery
+- Molecular Spectroscopy, Quantum Chemistry, Group Theory
+- Organic Chemistry, Inorganic Chemistry, Analytical Techniques in Chemistry
