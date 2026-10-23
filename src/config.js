@@ -38,7 +38,7 @@ module.exports = {
       url: '/#research',
     },
     {
-      name: 'Publications',
+      name: 'Publications & Thesis',
       url: '/#publications',
     },
     {

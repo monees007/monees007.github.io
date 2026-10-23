@@ -51,6 +51,31 @@ const publications = [
     url: 'https://figshare.com/s/7b59c8fa3c002b0f1171',
     venue: 'figshare',
   },
+  {
+    type: 'Master\'s Thesis · 2026',
+    title:
+      'Solvent-Modulated Structural Transformations in Cobalt and Copper Coordination Polymers: From Solvatochromic Switching to Hydrogen Evolution Electrocatalysis',
+    authors: 'Manish Chandra',
+    detail:
+      'Supervisor: Dr. Supriya Sabbani · School of Physical Sciences, Jawaharlal Nehru University, New Delhi',
+    abstract: `The thesis explores the structural flexibility and potential functional applications of transition
+      metal coordination polymers, focusing specifically on cobalt and copper frameworks. The first portion of the
+      study investigates a phase-induced chromatic transition within Co(INA)<sub>x</sub> metal-organic frameworks.
+      Experimental observations note a reversible thermochromic and solvatochromic shift between a solvated purple
+      phase and a desolvated orange phase. This optical transition seems to correlate with a rotational
+      "gate-opening" mechanism involving the isonicotinate ligands, which likely alters the coordination geometry
+      around the Co(II) centers. Periodic self-consistent field DFT+U calculations were utilized to model these
+      electronic structure changes, and the computationally obtained absorbance wavelengths appeared to be in
+      reasonable agreement with the experimental data. The second section examines solvent-induced redox
+      transformations in copper-based coordination polymers, including [Cu(ina)Cl<sub>3</sub>]<sub>n</sub> and
+      [Cu(4,4'-bipy)Cl<sub>3</sub>]<sub>n</sub>. It was observed that exposure to coordinating solvents triggers a
+      solid-to-solid phase transformation, seemingly driven by the oxidation of the metal centers from Cu(I) to
+      Cu(II). This structural change could be temporarily reversed using an aqueous solution of ascorbic acid and
+      chloride ions. Furthermore, the study evaluates these copper complexes for electrocatalytic hydrogen
+      evolution. Preliminary linear sweep voltammetry indicates that the
+      [Cu(H<sub>2</sub>O)<sub>2</sub>(4,4'-bipy)<sub>4</sub>] complex might achieve a benchmark current density of
+      10 mA/cm² at an overpotential of 0.134 V.`,
+  },
 ];
 
 const certifications = [
@@ -144,6 +169,21 @@ const StyledSection = styled.section`
     font-size: var(--fz-sm);
   }
 
+  .abstract {
+    margin-top: 12px;
+
+    summary {
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: var(--fz-sm);
+      cursor: pointer;
+    }
+
+    .card-text {
+      margin-top: 10px;
+    }
+  }
+
   .tags {
     display: flex;
     flex-wrap: wrap;
@@ -204,9 +244,9 @@ export const Research = () => (
 );
 
 export const Publications = () => (
-  <Section id="publications" heading="Publications">
+  <Section id="publications" heading="Publications & Thesis">
     <ul className="card-list">
-      {publications.map(({ type, title, authors, url, venue }, i) => (
+      {publications.map(({ type, title, authors, url, venue, detail, abstract }, i) => (
         <li className="card" key={i}>
           <p className="card-overline">{type}</p>
           <h3>{title}</h3>
@@ -218,9 +258,18 @@ export const Publications = () => (
               </React.Fragment>
             ))}
           </p>
-          <a className="card-link" href={url} target="_blank" rel="noopener noreferrer">
-            View on {venue} ↗
-          </a>
+          {detail && <p className="meta">{detail}</p>}
+          {abstract && (
+            <details className="abstract">
+              <summary>Abstract</summary>
+              <div className="card-text" dangerouslySetInnerHTML={{ __html: abstract }} />
+            </details>
+          )}
+          {url && (
+            <a className="card-link" href={url} target="_blank" rel="noopener noreferrer">
+              View on {venue} ↗
+            </a>
+          )}
         </li>
       ))}
     </ul>

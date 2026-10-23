@@ -93,7 +93,7 @@ const StyledLinks = styled.div`
   display: flex;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 
@@ -108,6 +108,7 @@ const StyledLinks = styled.div`
       position: relative;
       counter-increment: item 1;
       font-size: var(--fz-xs);
+      white-space: nowrap;
 
       a {
         padding: 10px;

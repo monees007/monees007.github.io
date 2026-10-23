@@ -10,7 +10,7 @@ import ThemeToggle from './themeToggle';
 const StyledMenu = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     display: block;
   }
 `;
@@ -18,7 +18,7 @@ const StyledMenu = styled.div`
 const StyledHamburgerButton = styled.button`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     ${({ theme }) => theme.mixins.flexCenter};
     position: relative;
     z-index: 10;
@@ -89,7 +89,7 @@ const StyledHamburgerButton = styled.button`
 const StyledSidebar = styled.aside`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     ${({ theme }) => theme.mixins.flexCenter};
     position: fixed;
     top: 0;
@@ -101,6 +101,8 @@ const StyledSidebar = styled.aside`
     outline: 0;
     background-color: var(--light-navy);
     box-shadow: -10px 0px 30px -15px var(--navy-shadow);
+    align-items: safe center;
+    overflow-y: auto;
     z-index: 9;
     transform: translateX(${props => (props.menuOpen ? 0 : 100)}vw);
     visibility: ${props => (props.menuOpen ? 'visible' : 'hidden')};
@@ -216,7 +218,7 @@ const Menu = () => {
   };
 
   const onResize = e => {
-    if (e.currentTarget.innerWidth > 768) {
+    if (e.currentTarget.innerWidth > 1200) {
       setMenuOpen(false);
     }
   };

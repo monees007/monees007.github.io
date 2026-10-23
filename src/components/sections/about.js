@@ -161,7 +161,7 @@ const About = () => {
             <p>
               My Master's research with Dr. Supriya Sabbani focused on solvent-modulated structural
               transformations in cobalt and copper coordination polymers, from solvatochromic
-              switching to hydrogen evolution catalysis, combining spectroscopic and thermal
+              switching to hydrogen evolution electrocatalysis, combining spectroscopic and thermal
               characterisation with periodic DFT+U calculations.
             </p>
 
